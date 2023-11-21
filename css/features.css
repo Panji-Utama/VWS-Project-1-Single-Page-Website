@@ -1,0 +1,28 @@
+h4 span {
+  color: var(--accentColor);
+}
+
+.features-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.text-features {
+    text-align: center;
+}
+
+#workspace-img {
+    height: 20rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+.features-guy img {
+    height: 400px;
+}
+
+.features-guy {
+    display: flex;
+    align-items: center;
+}
