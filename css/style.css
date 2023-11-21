@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#benefits,
+#contact {
+  background-color: #f0f0f0;
+}
+
+#features,
+#testimonials {
+  background-color: #e0e0e0;
+}
