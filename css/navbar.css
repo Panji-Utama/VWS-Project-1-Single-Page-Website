@@ -1,0 +1,79 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0; /* Remove default margin */
+}
+
+.header-background {
+  background: linear-gradient(
+    148.18347760344432deg,
+    rgb(73, 73, 212) 19%,
+    rgb(56, 56, 175) 65%
+  );
+  clip-path: polygon(0 0, 69% 0, 42% 100%, 0% 100%);
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  z-index: 5; /* Increase the z-index to make sure it's above the background */
+  position: relative;
+}
+
+.logo-text {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  position: relative;
+}
+
+#profile-pict {
+  border-radius: 50%;
+  height: 50px;
+}
+
+nav {
+  padding: 10px;
+  text-align: center;
+  z-index: 10; /* Increase the z-index to make sure it's above the background */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  z-index: 15; /* Increase the z-index to make sure it's above the background */
+}
+
+section {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#benefits,
+#contact {
+  background-color: #f0f0f0;
+}
+
+#home {
+  position: relative;
+  min-height: 200px;
+}
+
+#features,
+#testimonials {
+  background-color: #e0e0e0;
+}
