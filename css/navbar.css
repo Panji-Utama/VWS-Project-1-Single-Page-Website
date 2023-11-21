@@ -1,7 +1,4 @@
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0; /* Remove default margin */
-}
+
 
 .header-background {
   background: linear-gradient(
@@ -63,17 +60,7 @@ section {
   margin-top: 20px;
 }
 
-#benefits,
-#contact {
-  background-color: #f0f0f0;
-}
-
 #home {
   position: relative;
   min-height: 200px;
-}
-
-#features,
-#testimonials {
-  background-color: #e0e0e0;
 }

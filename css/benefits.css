@@ -1,0 +1,26 @@
+.reasons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reason-text {
+  padding-left: 30px;
+  font-weight: 200px;
+  color: rgb(94, 94, 94);
+}
+
+.companies-logo {
+  display: flex;
+  width: 400px;
+  align-items: center;
+}
+
+.companies-logo img {
+  height: 40px;
+  margin-left: 30px;
+}
+
+.line-1 {
+  border-bottom: 4px solid yellow;
+  width: 40px;
+}
