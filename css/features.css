@@ -27,4 +27,5 @@ h4 span {
     display: flex;
     align-items: center;
     background-color: rgb(250, 250, 250);
+    padding: 20px;
 }

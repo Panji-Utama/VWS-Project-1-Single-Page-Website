@@ -1,0 +1,86 @@
+#assistance {
+  text-align: center;
+  align-items: center;
+}
+
+#assistance span {
+  color: var(--accentColor);
+}
+
+.integration-tools img {
+  height: 50px;
+}
+
+.shape-container {
+  clip-path: polygon(51% 0, 100% 22%, 100% 80%, 52% 100%, 0 78%, 0 24%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+}
+
+.second-shape {
+  clip-path: polygon(51% 0, 100% 22%, 100% 80%, 52% 100%, 0 78%, 0 24%);
+  width: 100px;
+  height: 100px;
+  background-color: #d9d9da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-container {
+  background-color: #f5f6f8;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.integration-tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tool-slack {
+  background: #4a154b;
+}
+
+#tool-figma {
+  background: #303237;
+}
+
+#tool-adobe {
+  background: #fa0700;
+}
+
+#tool-photoshop {
+  background: white;
+}
+
+#button-view {
+  margin-top: 40px;
+}
+
+.automations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.automations-text {
+  text-align: left;
+}
+
+.automations img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  padding: 30px 130px;
+}

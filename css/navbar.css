@@ -1,20 +1,60 @@
 .header-background {
-  background: linear-gradient(
+  /* background: linear-gradient(
     148.18347760344432deg,
     rgb(73, 73, 212) 19%,
     rgb(56, 56, 175) 65%
-  );
-  clip-path: polygon(0 0, 69% 0, 42% 100%, 0% 100%);
+  ); */
+  width: 100vw;
+  /* clip-path: polygon(0 0, 69% 0, 42% 100%, 0% 100%); */
   color: white;
-  position: relative;
-  z-index: 1;
+}
+
+button {
+  background-color: var(--accentColor);
+  border: none;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 20px;
+}
+
+#home {
+  display: flex;
+  color: black;
+}
+
+.rating {
+  border: solid 1px rgb(236, 236, 236);
+  margin-left: 700px;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 8px 20px 25px 0px rgba(155, 153, 153, 0.48);
+}
+
+.rating img {
+  max-height: 20px;
+}
+
+.home-2 {
+  display: flex;
+  align-items: center;
+}
+
+.home-2 img {
+  height: 400px;
+  margin-left: 30px;
+}
+
+#profile-pict {
+  height: 10px;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
-  z-index: 5; /* Increase the z-index to make sure it's above the background */
-  position: relative;
+  background-color: rgb(56, 56, 175);
+  align-items: center;
 }
 
 .logo-text {
@@ -23,6 +63,11 @@
   align-items: center;
   z-index: 10;
   position: relative;
+  padding: 20px;
+}
+
+.logo-text h2 {
+  margin-left: 20px;
 }
 
 #profile-pict {
@@ -30,35 +75,36 @@
   height: 50px;
 }
 
-nav {
-  padding: 10px;
-  text-align: center;
-  z-index: 10; /* Increase the z-index to make sure it's above the background */
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin-right: 20px;
 }
 
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 nav ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
-  position: relative;
-  z-index: 15; /* Increase the z-index to make sure it's above the background */
+  padding: 10px 20px; /* Adjust padding as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
-section {
-  padding: 20px;
-  margin-top: 20px;
+nav ul li a:hover {
+  background-color: rgb(29, 29, 117);
 }
 
-#home {
-  position: relative;
-  min-height: 200px;
+#welcome {
+  color: white;
+  background-color: rgb(73, 73, 212);
+  width: 200px;
+  padding: 10px 5px;
+  border-radius: 10px;
 }

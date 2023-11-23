@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Single Page Website</title>
+    <title>TeamFlow</title>
+
+    <!-- CSS Files -->
     <link rel="stylesheet" type="text/css" href="css/navbar.css" />
     <link rel="stylesheet" href="css/benefits.css" />
     <link rel="stylesheet" href="css/features.css" />
+    <link rel="stylesheet" href="css/assistance.css" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      href="https://mediagen.captureone.com/media/byvpenqy/capture-one_application-logos_pro_400px.png"
     />
 
     <!-- Global variables will be defined here -->
@@ -23,6 +33,15 @@
       }
       section {
         margin-bottom: 50px;
+        padding: 20px;
+      }
+      .line-1 {
+        border-bottom: 4px solid var(--accentColor);
+        width: 40px;
+      }
+      .line-2 {
+        border-bottom: 4px solid #3bdad9;
+        width: 40px;
       }
     </style>
   </head>
@@ -33,24 +52,56 @@
         <div class="logo-text">
           <img
             id="profile-pict"
-            src="https://cdn.britannica.com/25/172925-050-DC7E2298/black-cat-back.jpg"
+            src="assets/images/teamflow.png"
             alt="Profile Picture"
           />
           <h2>TeamFlow</h2>
         </div>
         <nav>
           <ul>
-            <li><a href="#benefits">Benefits</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <div class="nav-list">
+                <a href="#benefits">Benefits</a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-list">
+                <a href="#features">Features</a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-list">
+                <a href="#testimonials">Testimonials</a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-list">
+                <a href="#contact">Contact</a>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
 
       <section id="home">
-        <h2>Work the way that works for you</h2>
-        <p>This is the topmost part</p>
+        <div class="home-1">
+          <div id="welcome">👋 Welcome to TeamFlow</div>
+          <h2>Work the way that works for you</h2>
+          <div class="line-2"></div>
+          <p>Create, Build, Collab</p>
+          <button>Get Started</button>
+        </div>
+        <div class="home-2">
+          <div class="rating">
+            <h4>Ricky Holmes</h4>
+            <h5>Update Contract Agreement</h5>
+            <img src="assets/images/stars.png" alt="">
+          </div>
+          <img
+              src="https://img.freepik.com/free-photo/artist-white_1368-3546.jpg"
+              alt=""
+            />
+        </div>
       </section>
     </div>
 
@@ -119,7 +170,70 @@
             quas aperiam beatae.
           </p>
         </div>
-        <img src="assets/images/guy.png" alt="">
+        <img src="assets/images/guy.png" alt="" />
+      </div>
+    </section>
+
+    <section id="assistance">
+      <h2><span>Integrate</span> with your existing tools in a few clicks</h2>
+      <div class="integration-tools">
+        <div class="box-container">
+          <div class="second-shape">
+            <div id="tool-slack" class="shape-container">
+              <img
+                src="data:image/png;base64,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"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="second-shape">
+            <div id="tool-figma" class="shape-container">
+              <img
+                src="https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=804&h=804&q=75&fit=max&auto=format"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="second-shape">
+            <div id="tool-adobe" class="shape-container">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Adobe_Acrobat_DC_logo_2020.svg/1200px-Adobe_Acrobat_DC_logo_2020.svg.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="second-shape">
+            <div id="tool-photoshop" class="shape-container">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOMAAADeCAMAAAD4tEcNAAAAxlBMVEUAHjYxqP////8yq/8AABYzrf8yrP8AECQADSEAGC4AHjUAGzIie70miNAACh4zr/8unvETTXkAAB0AFCkpkt8AGDIAACckgMQAEC4ACCoABxsAACgAACQAABsNPGErl+bW2dwQRGwfcK0YXI8KMlF4f4hOWWcJJDtATVw2RFUAABK+wscbZJsHLEkVVISUm6Khp60kNkl2fYYcaaITKkBrc32Ij5jN0NS2ur8iNEg6SFgRKD+boajg4+URSXMLN1oAAABWYG0Jq+J6AAAKUUlEQVR4nO2dCXOiyhaAG5DNZguLC0lQwTVBnYwmk8y9mdz3///UAzQTog2C0GzFV1NTqZqo/XmaXk4fGEBe4NfjdjZf7Regeiz2T8vnlx/jSwog1m+7vFXvhgMDlq0TATQGw556t3r5dZ3jeHarDo2yLRJhDNXeLDqcUY6Pq/th2U1PxfB++ZjK8fVNrUcEwxjq22tix/GqhoY+hvob1WMRjrOHehr6GA+zBI6//rktu6GZ6O3PxthTx22Ng3jAeNjGOz6rZTcxB9TnOMdlr+z25cLt72jHVb2mxGgGqyjHxih6K4LfaMd5cxQ9ySXK8fmu7HblSu/53PHfJoyoYdQfp47jh7LblDud8Ynjvu5T/znG4rvjSzMmxu/0ZmHHcafs9mDh2FsPjsvm9VQfY/Xl+Ni0MfUT9fWv41Mzw+gF8u3TsbFh9AL5eHScNzWMXiDnB8f35obRC+R74PjSpLX4KcOXwBFUNQueB9DwHcf3ZbcDK/djz3Fb7zzcJXpbz7Gha5xPjKXn2OQRx2dIgnGTZw4fdQxem5XiOOfuFWwb31e34Oeg7EZgZvATNHixesCYg1WTVzk+cAX2ZbcBO3tQxaKUfGm+YUtLS0tLS0tLS0tLS0XpBn/BAN5HO8Ie8H/kIeyW3c4MdDVfDizWU8uyJjc3NxvHw93tbCHAtneus7HWQJNYraamkk54UPIB+gjjQQX4P9G0LFOKLrgWx2k1zBh1iKRQFE0TogMkvuw2pyW540GUpsSNxtYrmCkdA03CXrB1ujLTO3owlA21+lhe5ehZEq5Umw57pSNByKOpVnbjE3K1ozfObsyyW5+M6x29UApmLfprFkeCFmsxi2RyJBhdqsHwms3Ri2QNrsmMjgQtVF8yqyMhbyo/hWR2JIjKl+hld6Qqf0nmEEf5puK7LaTj55b5c+PMULGSSsUnEJQjpVs+H9OAjz+O3VfkGE95U+1AIh3FDgzBaxr3MHV1OsqSGlX7ikQ7cme/BzXTEuWoQH5UemhN6ugBTUtBh5IS2IQf1/XIsfXJSOEIAA9HDFJS4S60HGosJ0ncEUmSWFbji0plpnIEkNORkaStmM4KNYm3XEHUR4o3YtPeN6KM9L7t3nxAk+UL6OXpHL32KihHZhe5oNPMtasTMk1RoW8nSNzSNDESNkDCnrJN6Qh4i07xiq7GuqO4aYei5ZELME89aR2BKaJarCBnD950FDl+/RDkMjEvlFI7Qgs1g8iI8QN2bpSo2Sb55+VAakfwgLoi5clZKHg+cj49/Txdwmh4jSNrI3offbac06YKep6pgyO/QYw6jHsysGoWcelCrLAj/EB0Qcb+7qhZiQ0r6bhGNP9kNQenyQ0r6QhQL/nuyI5ShLGKjmvUS+ywIyegFgq1ckSMl9+uR/iRSrGKjsgxJ7xgRS+F6uSInDto52t+RH4J9XJkbURfpUNLTlZIF8YKOnZQY6Y8/dogaREmtMwQSpDzo5nwRqt6jnCN6on0V/qR/4P8BUXYTHlN43m4njh2f0R8ZTQr5yghe+Loq5XIvkw5f7f83SDRZ/KWKxKHjVfVHPkP1Eqb6n9NjxIiHUI752lmqHHsRCDoyjlCE7mCoZ2vqcNE/LsS8YAtnoOuIsuVcoSsjtwwMaEhB8aH+YSuJm3suIxXDqTLPfJoRSKUKEct2Skh5gLv8riTVqlyyH8icsjhlRxyW4JO9xRFirOAdT/yLGAd6qooR8Yu8zliSRwhz0prR4zMsFFiaMyAC+S3sOuUdySCdvyPO1Zac5xkmh8be8REnlqdJKy6HPp3RFBaLQ/yjFXRxf4BUdQV2k9yRwoGR3nhd0TPLgRF2WVZos/KqRAxdscQfT+ZY/sRL2EIG5RSLJm9HoC2v1+9vBO5Q2bovmUWX5Ge2ZFSTrKOEMSEnqJ1t/CK9OyO09MWS7FpAG+LJU7MQquYszoiyqzQm6uwpjxyirTM6Ci7iOV0B30Q+82ScPnCLLM5yjvUjiFRXo4mXLOg6zKTo7d6Qb4pZyfJWtHKTTF1zBkcKWoTse/rmhd76+E70tdF3ChyvSOjTCN3hZCP2KGcfk30roBVwbWOlCywMZcTXCc8mpN1iP2qvNJRHlnxW0J+nfCIlVLOJtgqOFKysrm4VoFJj8opYl1CXUc8DK17hpeHCthxkvVXSsFcyZzOkaJpxZ4mMfTRFtH76m/vWkJeDtkOipEZpe9MOyn2DbAzSVS9Iu+wFq+g65AZhv57325wOqGIgvtnkf5WXZ5zlASLnvBxSf4gcx399Udw/3XAxJoCyZT8OsVrPkBjdwlqrUScvRXpKEjH++gDst44r7GbUUw2KIDBGUi0Y9KS24TwHUsgYjVPa19ypRBHv/CVd2KDOcKYgC3I0T/Y6Fh9KnLtI2OcIwtzBH4wgU1EWNIY6zuLdPTPvUBE6U5MJXNminX0LKUJ0hHnZxbt6E0lqDqtuCPKzOTvCC+thTRUgQ/Vx7ecy90RroXphb29hKhkrpUjfyPTAuDiLFHZnlr1Vf6G9uYHYR2TWGQRn8nYNXP0N5rihufQq3gWdegTrgzJG0yOQSpcdBads5uNoGkhPpKQMdZ2YHMkDjfhCJu1ZnKsX0TGaxoraVYfuQigTHyJVpyORPCAKEYZ9QXX2WwcdyeIEXtJrBtIzI5HUYo5PAks8lQa5+VYiGMScKbmquHIxBViZaYajvSi8JxV0Y40xgUAqIbjWdlEzlTBkcF8qlMBR+xPpynfEVk2kSulO9IObsWyHSnCwjqkBuSfB5ikuBNJ1nHfN++Tfz6HdYlEp46eobIppHK3gzjrZbLl5TTN0eOee3D8ImXFYYt53BfbV87JmrPmO+udTkR7Uoys9Cedwh5oxp7DZb9GoCbByU5UGP9BUV+FvoddFqXbEy2HD0lB95Sc3pbXuA5vbXb+E1dGhw4yEvv2xuJMrdoPh0qHfwOZ/+QcU/Kr8CXv7yuPo1taWlpaWlpaWlpaWlpaWlpaWlrKpPn/8/wCvJXdBOzswVPT87NwBf5nlN0IzBhzMBuU3QjMDGZgOyy7EZgZbsHrXdmNwMzdK3hXy24EZtR3QDa9rw5IQC6bPbAaS89x2yu7GVi53XqO4/uym4GV+7HnSC6a3FkNT9D70+jOOnwJHBs9e6jvgSM5b+5ybjAnD46/mjvqqI9HR3LV1FHHeCI/HR+bekUGYTw4kstmXpGDJfnl+B7xEOma03kPOZIvTZwjey9k2JHcN2/YMd7I747jMp+wjIfO+MSR/NG0sVX9QZ46ks/NSnrc/STPHcl5kzICwzmJciR/N0dy8ESiHZsjOfxNRjmS82Zck3dzMtqR/NmE0VV9JuMcyR/3dV8MGA9bMt6RHO/rvay7XYxPlc4cvbXrQ31DaTzMzoUQjuR4qdbT0lBXZ0GMcPQ2zU81tDTUt0ekDdrRs1zeD+t0wgyH90u0YbSj12NfhmqvHtE0eurwBdVLLzn6mtvlQL0bDoyqRhQag+GdOlhuowUvOfq8P25n86d9FUtcFvun+Wz7GOvn838eHMNT8M3VKQAAAABJRU5ErkJggg=="
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="button-view">View All</button>
+      <div class="automations">
+        <img
+          src="https://www.dicoding.com/blog/wp-content/uploads/2020/04/internship-rendi-photo-backend.png"
+          alt=""
+        />
+        <div class="automations-text">
+          <h4>Save time with Automations</h4>
+          <div class="line-1"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            nobis cumque eaque ut consectetur fugiat autem eligendi vero minima
+            porro! Voluptate non deserunt fuga sit eum cupiditate qui aliquam
+            maxime.
+          </p>
+        </div>
       </div>
     </section>
 
