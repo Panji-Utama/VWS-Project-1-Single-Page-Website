@@ -1,11 +1,6 @@
 .header-background {
-  /* background: linear-gradient(
-    148.18347760344432deg,
-    rgb(73, 73, 212) 19%,
-    rgb(56, 56, 175) 65%
-  ); */
+  /* ... existing styles ... */
   width: 100vw;
-  /* clip-path: polygon(0 0, 69% 0, 42% 100%, 0% 100%); */
   color: white;
 }
 
@@ -14,7 +9,7 @@ button {
   border: none;
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* Changed from 10px 20px to 0.625rem 1.25rem */
 }
 
 #home {
@@ -24,16 +19,18 @@ button {
 
 .rating {
   border: solid 1px rgb(236, 236, 236);
-  margin-left: 700px;
-  padding: 10px 30px;
+  margin-left: auto; /* Center the element */
+  margin-right: auto; /* Center the element */
+  padding: 0.625rem 1.875rem; /* Changed from 10px 30px to 0.625rem 1.875rem */
   text-align: center;
   border-radius: 10px;
-  width: 300px;
+  width: 18.75rem; /* Changed from 300px to 18.75rem */
   box-shadow: 8px 20px 25px 0px rgba(155, 153, 153, 0.48);
+  max-width: 90%; /* Ensure it doesn't overflow on small screens */
 }
 
 .rating img {
-  max-height: 20px;
+  max-height: 1.25rem; /* Changed from 20px to 1.25rem */
 }
 
 .home-2 {
@@ -42,8 +39,8 @@ button {
 }
 
 .home-2 img {
-  height: 400px;
-  margin-left: 30px;
+  height: 25rem; /* Changed from 400px to 25rem */
+  margin-left: 1.875rem; /* Changed from 30px to 1.875rem */
 }
 
 #profile-pict {
@@ -55,24 +52,23 @@ button {
   justify-content: space-between;
   background-color: rgb(56, 56, 175);
   align-items: center;
+  padding: 0.5rem 1rem;
 }
 
 .logo-text {
-  padding-left: 30px;
   display: flex;
   align-items: center;
-  z-index: 10;
-  position: relative;
-  padding: 20px;
 }
 
 .logo-text h2 {
   margin-left: 20px;
 }
 
-#profile-pict {
-  border-radius: 50%;
-  height: 50px;
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
@@ -81,30 +77,73 @@ nav ul li {
 }
 
 nav a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 10px 20px; /* Adjust padding as needed */
+  padding: 0.625rem 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
 }
 
-nav ul li a:hover {
+nav a:hover {
   background-color: rgb(29, 29, 117);
 }
 
-#welcome {
-  color: white;
-  background-color: rgb(73, 73, 212);
-  width: 200px;
-  padding: 10px 5px;
-  border-radius: 10px;
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Transform hamburger into 'X' when menu is open */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .logo-text {
+    margin-bottom: 1rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-active {
+    display: block;
+  }
 }

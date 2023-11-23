@@ -7,3 +7,13 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var hamburger = document.querySelector(".hamburger");
+  var navUl = document.querySelector(".nav-container nav ul");
+
+  hamburger.addEventListener("click", function () {
+    this.classList.toggle("change");
+    navUl.classList.toggle("nav-active");
+  });
+});
